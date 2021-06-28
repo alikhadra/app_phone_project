@@ -149,15 +149,18 @@ section.slider .carousel-inner {
   margin: 50px auto 0 auto ; 
 }
 section.slider .carousel-indicators {
-  padding: 0; 
+  padding: 0;
+  margin-bottom: 0;
 }
 section.slider .carousel-indicators li {
   max-width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 1px solid #ef473a;
+  margin-top: 30px;
+  background-color: #edc;
 }
-section.slider .carousel-indicators li.active {
+section.slider .carousel-indicators li:active {
   background-color: #ef473a; 
 }
 section.slider .carousel-control-next,
@@ -167,7 +170,7 @@ section.slider .carousel-control-prev {
   color: #ef473a;
   border-radius: 50%;
   border: 1px solid #ef473a;
-  margin-top: 130px;
+  margin-top: 100px;
   opacity: 1; 
 }
 section.faq {
@@ -255,8 +258,17 @@ footer .footer .widget .content ul.social-links li a {
    text-align: center;
    line-height: 50px;
 }
-footer .footer .widget .content ul.social-links li a:hover {
-   background-color: #ef473a;
+footer .footer .widget .content ul.social-links li .twitter:hover {
+   background-color: #5DA9DD;
+}
+footer .footer .widget .content ul.social-links li .linkedin:hover {
+  background-color: #0077B5;
+}
+footer .footer .widget .content ul.social-links li .google-plus:hover {
+  background-color: #DD4D42;
+}
+footer .footer .widget .content ul.social-links li .facebook:hover {
+  background-color: #4867AA;
 }
 footer .footer .widget .content ul.social-links {
    padding: 0px;
@@ -351,7 +363,10 @@ footer .footer .widget .content form .error {
        height: 50px;
        line-height: 50px;
    }
-
+   section.slider .carousel-control-next,
+   section.slider .carousel-control-prev {
+     margin-top: 65px;
+}
   
    section.option .options .media {
        margin-bottom: 30px;
@@ -402,6 +417,10 @@ section.banner .overlay .images {
     section.option .images {
         bottom: -400px;
     }
+      section.slider .carousel-control-next,
+   section.slider .carousel-control-prev {
+     margin-top: 40px;
+}
 
     section.option .options {
         margin-bottom: 300px;
@@ -409,9 +428,8 @@ section.banner .overlay .images {
 
 }
 @media(max-width : 575px) {
-   section.banner .overlay .app-icon img {
-        margin: 0 auto 30px;
-        display: block;
+   section.banner .overlay .images {
+       margin-bottom: 250px;
     }
      section.banner .overlay .banner-text {
         margin-bottom: 350px;
